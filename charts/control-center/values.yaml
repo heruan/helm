@@ -10,6 +10,7 @@ image:
 serviceAccount:
   create: true
   automount: true
+  clusterAdmin: false
 service:
   type: LoadBalancer
   port: 8000
