@@ -17,3 +17,8 @@ service:
   port: 8000
   targetPort: 8080
 resources: {}
+cert-manager:
+  installCRDs: true
+trust-manager:
+  crds:
+    enabled: true
