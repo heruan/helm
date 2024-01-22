@@ -16,7 +16,7 @@ spec:
   secretName: {{ include "control-center.fullname" . }}-ca-secret
   privateKey:
     algorithm: ECDSA
-    size: 4096
+    size: 256
   duration: 87600h
   renewBefore: 720h
   usages:
