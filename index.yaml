@@ -3,6 +3,27 @@ entries:
   control-center:
   - apiVersion: v2
     appVersion: 1.0-SNAPSHOT
+    created: "2024-01-22T23:18:31.918599136Z"
+    dependencies:
+    - alias: cert-manager
+      condition: cert-manager.enabled
+      name: cert-manager
+      repository: https://charts.jetstack.io
+      version: v1.13.3
+    - alias: trust-manager
+      condition: trust-manager.enabled
+      name: trust-manager
+      repository: https://charts.jetstack.io
+      version: v0.8.0
+    description: A Helm chart for Vaadin Control Center
+    digest: b442286cdac5de61b3322c70e42abb28472a3c8c55ccb98b96b02c4f682e1db6
+    name: control-center
+    type: application
+    urls:
+    - https://github.com/heruan/helm/releases/download/control-center-0.3.5/control-center-0.3.5.tgz
+    version: 0.3.5
+  - apiVersion: v2
+    appVersion: 1.0-SNAPSHOT
     created: "2024-01-22T23:09:33.784408076Z"
     dependencies:
     - alias: cert-manager
@@ -112,4 +133,4 @@ entries:
     urls:
     - https://github.com/heruan/helm/releases/download/control-center-0.1.0/control-center-0.1.0.tgz
     version: 0.1.0
-generated: "2024-01-22T23:09:33.784426861Z"
+generated: "2024-01-22T23:18:31.918650472Z"
